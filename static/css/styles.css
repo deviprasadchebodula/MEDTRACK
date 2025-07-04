@@ -1,0 +1,23 @@
+body.home-page {
+    background-color: #000000;
+    background-image: none;
+}
+
+.jumbotron h1, .jumbotron p {
+    color: #000000;
+}
+
+.hero-section, .slogan-box, .card, .jumbotron {
+    background-color: #64b5f6;
+    color: #000000;
+}
+
+/* Optional transition for fade effect */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}

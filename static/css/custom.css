@@ -1,0 +1,178 @@
+:root {
+    --primary-color: #64b5f6;
+    --secondary-color: #ffffff;
+    --background-dark:white;
+    --text-dark: #000000;
+    --focus-color: #ffc107;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000000;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+.navbar .nav-link,
+.navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Buttons */
+.btn, .nav-link {
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #42a5f5;
+    border-color: #42a5f5;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+    border-radius: 1rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+}
+
+/* Slogan Styling */
+#slogan {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slogan-box {
+    background: linear-gradient(to right, #42a5f5, #42a5f5);
+    padding: 30px 50px;             /* increased padding */
+    margin: 40px auto;
+    max-width: 900px;               /* increased width */
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.slogan-text {
+    font-size: 2rem;                /* increased text size */
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Cards */
+.card {
+    border-radius: 0.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: var(--primary-color);
+    color: var(--text-dark);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.05);
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+/* Forms */
+.form-control,
+.form-select {
+    border-radius: 0.4rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(100, 181, 246, 0.25);
+}
+
+/* Responsive Headings */
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 1.3rem;
+    }
+}
+.skyblue-section {
+    background-color: #64b5f6; /* Dark sky blue */
+    color: #000000;            /* Text in black */
+    padding: 60px 20px;
+}
+
+/* Style for buttons if not already defined */
+.btn-gradient {
+    background: linear-gradient(to right, #42a5f5, #2196f3);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.4s;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(to right, #2196f3, #1976d2);
+    color: #fff;
+}
+
+/* Card Styling */
+.custom-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    color: #000;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+}
+.skyblue-box {
+    background-color: #64b5f6; /* Sky blue */
+    color: #000;              /* Black text */
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
